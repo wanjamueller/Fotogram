@@ -6,14 +6,10 @@
     position: relative;
 }
 
-header {
-    background-color: var(--background_hfd);
-    width: 100%;
-    padding: 20px 0px;
-    display: flex;
-    justify-content: center;
-
-    img {
-        height: 32px;
-    }
+article {
+    background-color: var(--background_main);
 }
+
+/* #region mediaqueries */
+
+/* #endregion mediaqueries */

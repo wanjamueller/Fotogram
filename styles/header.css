@@ -1,0 +1,23 @@
+header {
+    background-color: var(--background_hfd);
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: clamp(32px, calc(100vw * 41px / 769px), 41px);
+    }
+}
+
+/* #region media queries */
+
+@media screen AND (min-width: 769px) {
+    header {
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px 140px;
+    }
+}
+
+/* #endregion mediaqueries */
