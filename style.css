@@ -5,3 +5,11 @@
     scroll-behavior: smooth;
     position: relative;
 }
+
+article {
+    background-color: var(--background_main);
+}
+
+/* #region mediaqueries */
+
+/* #endregion mediaqueries */
