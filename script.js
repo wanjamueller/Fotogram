@@ -33,3 +33,10 @@ const myImages = [
 ];
 
 console.log(myImages.length);
+
+const containerRef = document.getElementById("container");
+const sliderRef = document.getElementById("slider");
+
+function renderPictures() {
+    containerRef.innerHTML = "";
+}
