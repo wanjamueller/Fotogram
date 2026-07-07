@@ -11,7 +11,7 @@ body {
     padding-bottom: 150px;
 }
 
-article {
+main {
     display: flex;
     flex-direction: column;
     padding: clamp(40px, calc(100vw * 160px / 1440px), 160px) clamp(30px, calc(100vw * 135px / 1440px), 135px);
@@ -26,8 +26,16 @@ article {
 
 /* #region mediaqueries */
 
+@media screen AND (max-width: 360px) {
+    main {
+        h1 {
+            font-size: 32px;
+        }
+    }
+}
+
 @media screen AND (min-width: 769px) {
-    article {
+    main {
         h1 {
             font-size: var(--h1_size_desktop);
         }
@@ -37,7 +45,7 @@ article {
 /* #region Contentlimit */
 
 @media screen AND (min-width: 1441px) {
-    article {
+    main {
         padding: 160px max(calc(50% - 580px), 140px);
     }
 }
