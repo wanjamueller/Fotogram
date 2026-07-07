@@ -13,22 +13,23 @@
         <link rel="stylesheet" href="./styles/fonts.css" />
         <link rel="stylesheet" href="./styles/header.css" />
         <link rel="stylesheet" href="./styles/footer.css" />
+        <script src="templates.js"></script>
         <script src="script.js" defer></script>
     </head>
     <body>
+        <header>
+            <img src="./assets/img/fotogram_logo.svg" alt="fotogram-logo" />
+        </header>
         <main>
-            <header>
-                <img src="./assets/img/fotogram_logo.png" alt="fotogram-logo" />
-            </header>
-            <article>
-                <h1>Your personal photo album</h1>
-                <section id="slider"></section>
-            </article>
-
-            <footer>
-                <img src="./assets/img/DA_Logo.png" alt="developer-akademie-logo" />
-                <p>© 2023 Developer Akademie GmbH</p>
-            </footer>
+            <h1>Your personal photo album</h1>
+            <section id="container">
+                <dialog id="dialog"></dialog>
+            </section>
         </main>
+
+        <footer>
+            <img src="./assets/img/da_logo.svg" alt="developer-akademie-logo" />
+            <p>© 2023 Developer Akademie GmbH</p>
+        </footer>
     </body>
 </html>
