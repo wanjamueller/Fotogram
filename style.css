@@ -12,8 +12,26 @@ body {
 }
 
 article {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(40px, calc(100vw * 160px / 1440px), 160px) clamp(30px, calc(100vw * 135px / 1440px), 135px);
+
+    h1 {
+        font-size: var(--h1_size_mobile);
+        font-weight: var(--h1_weight);
+        color: var(--font_color);
+        text-align: center;
+    }
 }
 
 /* #region mediaqueries */
+
+@media screen AND (min-width: 769px) {
+    article {
+        h1 {
+            font-size: var(--h1_size_desktop);
+        }
+    }
+}
 
 /* #endregion mediaqueries */
