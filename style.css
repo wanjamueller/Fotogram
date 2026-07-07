@@ -22,6 +22,22 @@ main {
         color: var(--font_color);
         text-align: center;
     }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .picture {
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 16px;
+            border: 2px rgb(18, 17, 88);
+            object-fit: cover;
+        }
+    }
 }
 
 /* #region mediaqueries */
