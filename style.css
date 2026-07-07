@@ -6,8 +6,12 @@
     position: relative;
 }
 
-article {
+body {
     background-color: var(--background_main);
+    padding-bottom: 150px;
+}
+
+article {
 }
 
 /* #region mediaqueries */
