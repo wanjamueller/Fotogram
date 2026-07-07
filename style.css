@@ -34,4 +34,14 @@ article {
     }
 }
 
+/* #region Contentlimit */
+
+@media screen AND (min-width: 1441px) {
+    article {
+        padding: 160px max(calc(50% - 580px), 140px);
+    }
+}
+
+/* #endregion contentlimit */
+
 /* #endregion mediaqueries */
