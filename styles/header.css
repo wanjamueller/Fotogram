@@ -1,9 +1,10 @@
 header {
     background-color: var(--background_hfd);
     width: 100%;
-    padding: 20px 0px;
+
     display: flex;
     justify-content: center;
+    padding: 20px 0px;
 
     img {
         height: clamp(32px, calc(100vw * 41px / 769px), 41px);
@@ -12,12 +13,24 @@ header {
 
 /* #region media queries */
 
-@media screen AND (min-width: 769px) {
+@media screen AND (min-width: 769px) AND (max-width: 1440px) {
     header {
         display: flex;
         justify-content: flex-start;
         padding: 20px 140px;
     }
 }
+
+/* #region contentlimit */
+
+@media screen AND (min-width: 1441px) {
+    header {
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px max(calc(50% - 580px), 140px);
+    }
+}
+
+/* #endregion contentlimit */
 
 /* #endregion mediaqueries */
