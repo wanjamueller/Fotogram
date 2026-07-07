@@ -3,8 +3,14 @@
 
     --background_main: rgb(6, 23, 30);
 
-    --font_color: white;
+    /* #region fonts */
 
+    --h1_size_mobile: 3rem;
+    --h1_size_desktop: 3.5rem;
+    --h1_weight: 800;
+    --font_color: white;
     --font_color_footer: rgb(153, 172, 179);
     --font_size_footer: 0.875rem;
+
+    /* #endregion fonts */
 }
