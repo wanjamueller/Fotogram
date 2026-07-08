@@ -59,32 +59,74 @@ main {
 }
 
 #image-dialog.open {
-    width: 60dvh;
-    height: 70dvh;
+    height: 550px;
     position: fixed;
     margin: auto;
-    background-color: rgb(6, 23, 30);
-    border: 1px solid rgb(18, 70, 88);
+    background-color: var(--background_hfd);
     border-radius: 25px;
 
-    header & footer {
-        background-color: rgb(6, 23, 30);
+    .dialog {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        /* width: clamp(300px, calc(100vw * 675px / 1440px), 675px); */
+        /* height: 675px; */
+        width: 345px;
+
+        .dialog-header {
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 35px;
+
+            h2 {
+                font-size: 1.5rem;
+                color: var(--font_color);
+            }
+
+            img {
+                height: 14px;
+            }
+
+            .close {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .close-button {
+                display: flex;
+                border: none;
+                background: none;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+
+        .picture-open {
+            width: 300px;
+            display: flex;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 56px;
+
+            p {
+                color: var(--font_color);
+                font-size: 1rem;
+            }
+
+            button {
+                display: flex;
+                border: none;
+                background: none;
+                cursor: pointer;
+                outline: none;
+            }
+        }
     }
-}
-
-.dialog {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-.show_image {
-    max-width: 450px;
-    max-height: 350px;
-    object-fit: cover;
-    border: 2px solid rgb(18, 70, 88);
 }
 
 /* #region mediaqueries */

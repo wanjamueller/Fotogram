@@ -103,11 +103,13 @@ function loadModal(i) {
 renderPictures(myImages);
 
 function nextPic(i) {
-    if (i === myImages.length - 1) return loadModal(i + 1);
+    if (i == myImages.length - 1) i = -1;
+    return loadModal(i + 1);
 }
 
 function prevPic(i) {
-    if (i === 0) return loadModal(i - 1);
+    if (i == 0) i = myImages.length;
+    return loadModal(i - 1);
 }
 
 function closeFocus() {
