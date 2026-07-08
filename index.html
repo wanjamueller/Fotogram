@@ -13,8 +13,8 @@
         <link rel="stylesheet" href="./styles/fonts.css" />
         <link rel="stylesheet" href="./styles/header.css" />
         <link rel="stylesheet" href="./styles/footer.css" />
-        <script src="templates.js"></script>
-        <script src="script.js" defer></script>
+        <script defer src="templates.js"></script>
+        <script defer src="script.js"></script>
     </head>
     <body>
         <header>
@@ -22,13 +22,12 @@
         </header>
         <main>
             <h1>Your personal photo album</h1>
-            <section class="container" id="container">
-                <dialog id="dialog"></dialog>
-            </section>
+            <section class="container" id="container"></section>
+            <dialog id="image-dialog"></dialog>
         </main>
 
         <footer>
-            <img src="./assets/img/da_logo.svg" alt="developer-akademie-logo" />
+            <img class="show_image" src="./assets/img/da_logo.svg" alt="developer-akademie-logo" />
             <p>© 2023 Developer Akademie GmbH</p>
         </footer>
     </body>
