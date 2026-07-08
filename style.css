@@ -34,14 +34,57 @@ main {
     }
 
     .picture {
+        width: 150px;
+        height: 154px;
+        /* padding-inline: calc(50% - 720px); */
+
         img {
             width: 150px;
             height: 150px;
             border-radius: 16px;
             border: 2px rgb(18, 17, 88);
             object-fit: cover;
+            border: 2px solid rgb(18, 70, 80);
+        }
+
+        img:hover {
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border: 3px solid rgb(60, 138, 164);
+            border-radius: 15px;
+            cursor: pointer;
         }
     }
+}
+
+#image-dialog.open {
+    width: 60dvh;
+    height: 70dvh;
+    position: fixed;
+    margin: auto;
+    background-color: rgb(6, 23, 30);
+    border: 1px solid rgb(18, 70, 88);
+    border-radius: 25px;
+
+    header & footer {
+        background-color: rgb(6, 23, 30);
+    }
+}
+
+.dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.show_image {
+    max-width: 450px;
+    max-height: 350px;
+    object-fit: cover;
+    border: 2px solid rgb(18, 70, 88);
 }
 
 /* #region mediaqueries */

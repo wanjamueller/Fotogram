@@ -1,17 +1,17 @@
 function framesTemplate(i) {
-    /*html*/ `
+    return /*html*/ `
     <figure class="picture">
-        <img id="pic${i}"  src="./assets/img/${myImages[i].file}" onclick="focusPicture(i)" alt="./assets/img/${myImages[i].alt}">;
+        <img id="pic${i}"  src="./assets/img/${myImages[i].file}" onclick="focusPicture(${i})" alt="./assets/img/${myImages[i].alt}">;
         </figure>
     `;
 }
 
 function dialogTemplate(i) {
-    /*html*/ `
+    return /*html*/ `
     <div class="dialog">
         <header>
             <h2>${myImages[i].name}</h2>
-            <button class="close" onclick="close.focusPicture()" ><img src="./assets/icon/close_x.png" alt="click X to close the popup"></button>
+            <button class="close" onclick="close.focusPicture()" ><img src="./assets/icons/close_x.png" alt="click X to close the popup"></button>
         </header>
         <img class="focus_picture" id="pic${i}" src="./assets/img/${myImages[i].file}" alt="./assets/img/${myImages[i].alt}" onclick="focusPicture(i)" >
         <footer class=picture_nav>
