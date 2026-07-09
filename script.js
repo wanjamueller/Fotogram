@@ -89,27 +89,27 @@ function renderPictures(i) {
 }
 
 function focusPicture(i) {
-    loadModal(i);
+    showModal(i);
     dialogRef.classList.add("open");
     dialogRef.showModal();
 }
 
-function loadModal(i) {
+function showModal(i) {
     dialogRef.innerHTML = "";
 
     dialogRef.innerHTML += dialogTemplate(i);
 }
 
-renderPictures(myImages);
+// renderPictures(myImages);
 
 function nextPic(i) {
     if (i == myImages.length - 1) i = -1;
-    return loadModal(i + 1);
+    return showModal(i + 1);
 }
 
 function prevPic(i) {
     if (i == 0) i = myImages.length;
-    return loadModal(i - 1);
+    return showModal(i - 1);
 }
 
 function closeFocus() {
@@ -119,6 +119,12 @@ function closeFocus() {
 
 dialogRef.addEventListener("click", (event) => {
     if (event.target === dialogRef) {
+        closeFocus();
+    }
+});
+
+dialogRef.addEventListener("keydown", (esc) => {
+    if (esc.key === "Escape") {
         closeFocus();
     }
 });

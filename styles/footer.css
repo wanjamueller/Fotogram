@@ -1,4 +1,4 @@
-footer {
+.footer-main {
     display: flex;
     background-color: var(--background_hfd);
     padding-bottom: 19px;
@@ -23,7 +23,7 @@ footer {
     }
 }
 
-footer::before {
+.footer-main::before {
     content: "";
     position: absolute;
     top: -50px;
@@ -36,7 +36,7 @@ footer::before {
 }
 
 @media screen AND (min-width: 767px) {
-    footer {
+    .footer-main {
         display: flex;
         position: fixed;
     }
