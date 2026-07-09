@@ -1,3 +1,5 @@
+/* #region header */
+
 header {
     background-color: var(--background_hfd);
     width: 100%;
@@ -10,6 +12,8 @@ header {
         height: clamp(32px, calc(100vw * 41px / 769px), 41px);
     }
 }
+
+/* #endregion header */
 
 /* #region media queries */
 
