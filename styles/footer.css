@@ -44,7 +44,7 @@
 @media screen AND (min-width: 767px) {
     .footer-main {
         display: flex;
-        position: fixed;
+        position: absolute;
     }
 }
 
