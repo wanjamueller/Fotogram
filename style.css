@@ -107,7 +107,7 @@ main {
                 border: none;
                 background: none;
                 cursor: pointer;
-                outline: none;
+                /* outline: none; */
             }
         }
 
@@ -118,7 +118,7 @@ main {
             object-fit: cover;
         }
 
-        nav {
+        .dialog-footer {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -139,7 +139,7 @@ main {
                 border: none;
                 background: none;
                 cursor: pointer;
-                outline: none;
+                /* outline: none; */
             }
         }
     }

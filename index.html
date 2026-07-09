@@ -16,17 +16,22 @@
         <script defer src="templates.js"></script>
         <script defer src="script.js"></script>
     </head>
-    <body>
+    <body onload="renderPictures()">
         <header>
             <img src="./assets/img/fotogram_logo.svg" alt="fotogram-logo" />
         </header>
         <main>
-            <h1>Your personal photo album</h1>
+            <h1 tabindex="0">Your personal photo album</h1>
             <section class="container" id="container"></section>
-            <dialog id="image-dialog"></dialog>
+            <dialog
+                tabindex="0"
+                id="image-dialog"
+                aria-labelledby="dialogTitle"
+                aria-describedby="Picture Gallery"
+            ></dialog>
         </main>
 
-        <footer>
+        <footer class="footer-main">
             <img class="show_image" src="./assets/img/da_logo.svg" alt="developer-akademie-logo" />
             <p>© 2023 Developer Akademie GmbH</p>
         </footer>
