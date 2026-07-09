@@ -8,7 +8,7 @@ function framesTemplate(i) {
 
 function dialogTemplate(i) {
     return /*html*/ `
-    <div class="dialog">
+    <div aria-labelledby="dialogTitle" class="dialog">
         <header class="dialog-header">
             <h2 tabindex="0" aria-describedby="picture name" id="dialogTitle">${myImages[i].name}</h2>
             <div class="close">
