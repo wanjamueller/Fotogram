@@ -117,4 +117,10 @@ function closeFocus() {
     dialogRef.classList.remove("open");
 }
 
+dialogRef.addEventListener("click", (event) => {
+    if (event.target === dialogRef) {
+        closeFocus();
+    }
+});
+
 // #endregion functions

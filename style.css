@@ -15,6 +15,8 @@ main {
     display: flex;
     flex-direction: column;
     padding: clamp(40px, calc(100vw * 160px / 1440px), 160px) clamp(20px, calc(100vw * 90px / 1440px), 135px);
+    padding-bottom: 0;
+    gap: clamp(56px, calc(100vw * 80 / 1440), 80px);
 
     h1 {
         font-size: var(--h1_size_mobile);
@@ -27,16 +29,12 @@ main {
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
-        /* row-gap: 50px; */
-
-        padding: clamp(56px, calc(100vw * 80 / 1440), 80px) 0px;
         justify-content: center;
     }
 
     .picture {
         width: 150px;
         height: 154px;
-        /* padding-inline: calc(50% - 720px); */
 
         img {
             width: 150px;
@@ -59,28 +57,34 @@ main {
 }
 
 #image-dialog.open {
-    height: 550px;
+    height: 80dvh;
+    max-height: 900px;
+    width: 90dvw;
+    max-width: 900px;
+    min-width: 300px;
     position: fixed;
     margin: auto;
     background-color: var(--background_hfd);
     border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
 
     .dialog {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
+        justify-content: space-between;
         align-items: center;
-        /* width: clamp(300px, calc(100vw * 675px / 1440px), 675px); */
-        /* height: 675px; */
-        width: 345px;
+
+        gap: 48px;
 
         .dialog-header {
             display: flex;
             flex-direction: column-reverse;
-            padding: 35px;
+            padding: 0px 10px;
 
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.25rem;
                 color: var(--font_color);
             }
 
@@ -103,15 +107,21 @@ main {
         }
 
         .picture-open {
-            width: 300px;
+            width: 100%;
             display: flex;
-            object-fit: cover;
+            object-fit: contain;
         }
 
         nav {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 56px;
+            padding: 0px 20px 32px 20px;
+
+            div {
+                width: 40px;
+            }
 
             p {
                 color: var(--font_color);
@@ -139,10 +149,21 @@ main {
     }
 }
 
-@media screen AND (min-width: 769px) {
+@media screen AND (min-width: 767px) {
     main {
         h1 {
             font-size: var(--h1_size_desktop);
+        }
+    }
+
+    #image-dialog.open {
+        .dialog {
+            .dialog-header {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
         }
     }
 }
