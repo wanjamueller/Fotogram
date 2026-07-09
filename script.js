@@ -17,17 +17,17 @@ let myImages = [
         name: "edyttka1388-winter",
     },
     {
-        alt: "Close-up of a weathered blue wooden edge with peeling paint and exposed, splintered wood",
+        alt: "Close-up of a weathered blue wooden edge with peeling paint and exposed",
         file: "engin_akyurt-blue.jpg",
         name: "engin_akyurt-blue",
     },
     {
-        alt: "Close-up of rough grey stacked stones forming a wall",
+        alt: "Old worndown brickwall with streetart",
         file: "engin_akyurt-stone.jpg",
         name: "engin_akyurt-stone",
     },
     {
-        alt: "Close-up of rough grey stacked stones forming a wall",
+        alt: "Close-up of rough dark grey stacked stones forming a wall",
         file: "freeimagesguide-rock-wall.jpg",
         name: "freeimagesguide-rock-wall",
     },
@@ -37,7 +37,7 @@ let myImages = [
         name: "mariya_m-poster",
     },
     {
-        alt: "Silhouette of a horse on a lead rope standing on wet ground with snowy hills in the background",
+        alt: "Horse on a lead rope standing on wet ground with snowy hills in the background",
         file: "mellyschatz321-pferd.jpg",
         name: "mellyschatz321-pferd",
     },
