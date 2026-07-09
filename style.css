@@ -21,8 +21,8 @@ main {
     display: flex;
     flex-direction: column;
     padding: clamp(40px, calc(100vw * 160px / 1440px), 160px) clamp(20px, calc(100vw * 90px / 1440px), 135px);
-    /* padding-bottom: 0; */
-    gap: clamp(56px, calc(100vw * 80 / 1440), 80px);
+    gap: 40px;
+    height: 100%;
 
     h1 {
         font-size: var(--h1_size_mobile);
@@ -205,6 +205,7 @@ main {
 
 @media screen AND (min-width: 1441px) {
     main {
+        display: flex;
         padding: 160px max(calc(50% - 580px), 140px);
     }
 }

@@ -57,11 +57,6 @@ let myImages = [
         name: "tho-ge-street-art",
     },
     { alt: "Rain droplets on a glass surface", file: "tlcmich-sunroof.jpg", name: "tlcmich-sunroof" },
-    {
-        alt: "Extreme close-up of a tabby cat's face, focused on its green eye and whiskers",
-        file: "ykaiavu-cat.jpg",
-        name: "ykaiavu-cat",
-    },
 ];
 
 // #endregion Images
