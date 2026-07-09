@@ -1,3 +1,5 @@
+/* #region footer */
+
 .footer-main {
     display: flex;
     background-color: var(--background_hfd);
@@ -35,9 +37,15 @@
     z-index: -1;
 }
 
+/* #endregion footer */
+
+/* #region mediaquerries */
+
 @media screen AND (min-width: 767px) {
     .footer-main {
         display: flex;
         position: fixed;
     }
 }
+
+/* #endregion mediaquerries */

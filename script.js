@@ -64,9 +64,6 @@ let myImages = [
     },
 ];
 
-console.log(myImages.length);
-// console.log(myImages);
-
 // #endregion Images
 
 // #region link HTML
@@ -80,7 +77,6 @@ const dialogRef = document.getElementById("image-dialog");
 
 function renderPictures(i) {
     containerRef.innerHTML = "";
-
     for (let i = 0; i < myImages.length; i++) {
         const frames = myImages[i];
         console.log(frames);
@@ -96,11 +92,8 @@ function focusPicture(i) {
 
 function showModal(i) {
     dialogRef.innerHTML = "";
-
     dialogRef.innerHTML += dialogTemplate(i);
 }
-
-// renderPictures(myImages);
 
 function nextPic(i) {
     if (i == myImages.length - 1) i = -1;

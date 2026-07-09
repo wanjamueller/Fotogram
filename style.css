@@ -9,7 +9,12 @@
 body {
     background-color: var(--background_main);
     padding-bottom: 150px;
+    font-family: "Figtree";
 }
+
+/* #region main */
+
+/* #region gallery */
 
 main {
     display: flex;
@@ -59,6 +64,10 @@ main {
     }
 }
 
+/* #endregion gallery */
+
+/* #region dialog */
+
 #image-dialog.open {
     height: 80dvh;
     max-height: 700px;
@@ -107,7 +116,6 @@ main {
                 border: none;
                 background: none;
                 cursor: pointer;
-                /* outline: none; */
             }
         }
 
@@ -139,11 +147,14 @@ main {
                 border: none;
                 background: none;
                 cursor: pointer;
-                /* outline: none; */
             }
         }
     }
 }
+
+/* #endregion dialog */
+
+/* #endregion main */
 
 /* #region mediaqueries */
 
