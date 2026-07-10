@@ -48,12 +48,6 @@ function eventListeners() {
         }
     });
 
-    // dialogRef.addEventListener("click", (event) => {
-    //     if (event.target !== dialogRef) {
-    //         eventBubblingPrevention();
-    //     }
-    // });
-
     dialogRef.addEventListener("keydown", (esc) => {
         if (esc.key === "Escape") {
             closeFocus();
